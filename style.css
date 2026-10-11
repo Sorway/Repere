@@ -14,6 +14,6 @@ footer{font-size:11px;color:var(--muted)}footer a{color:var(--muted)}
 
 .country-row{display:flex;align-items:center;gap:8px;min-height:0}.country-row:has(#country:empty){display:none}#flag{display:block;object-fit:contain;border-radius:2px;flex-shrink:0}#flag[hidden]{display:none}
 
-.brand{display:flex;align-items:center;gap:8px}.brand img{display:block;border-radius:6px}
+.brand{display:flex;align-items:center;gap:8px}.brand img{display:block}
 
 #map{background:#19222e}#map .maplibregl-ctrl-group{background:#19222e}#map .maplibregl-ctrl-group button{width:30px;border-radius:0}#map .maplibregl-ctrl-icon{filter:invert(1)}#map .maplibregl-ctrl-attrib{color:#263238;background:#ffffffe6}#map .maplibregl-ctrl-attrib a{color:#245c45}

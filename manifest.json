@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Repère — WorldGuessr",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Afficher la carte, la ville, le pays et les coordonnées du panorama WorldGuessr.",
   "permissions": [
     "activeTab",

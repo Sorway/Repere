@@ -2,7 +2,7 @@
   <img src="assets/repere-logo.png" alt="Logo Repère" width="120" height="120">
   <h1>Repère</h1>
   <p>La carte, la ville et le pays du panorama WorldGuessr, directement dans le volet Chrome.</p>
-  <p><strong>Chrome 116+</strong> · <strong>Version 1.8.1</strong> · <strong>Sans clé API</strong></p>
+  <p><strong>Chrome 116+</strong> · <strong>Version 1.8.2</strong> · <strong>Sans clé API</strong></p>
   <p><a href="#installation">Installation</a> · <a href="#utilisation">Utilisation</a> · <a href="#dépannage">Dépannage</a></p>
 </div>
 

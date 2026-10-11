@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Repère — WorldGuessr",
+  "version": "1.8.1",
+  "description": "Afficher la carte, la ville, le pays et les coordonnées du panorama WorldGuessr.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://*.worldguessr.com/*",
+    "https://photon.komoot.io/*"
+  ],
+  "action": {
+    "default_title": "Repère — Lieu actuel",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.worldguessr.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "minimum_chrome_version": "116",
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; worker-src 'self'; child-src 'self'; frame-src 'none'; connect-src 'self' https://photon.komoot.io https://tiles.openfreemap.org; img-src 'self' data: blob: https://tiles.openfreemap.org;"
+  },
+  "short_name": "Repère",
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  }
+}
